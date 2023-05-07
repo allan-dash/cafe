@@ -1,3 +1,9 @@
+@font-face {
+    font-family: LibreFranklin;
+    src: url(./fonts/LibreFranklin-VariableFont_wght.ttf);
+  }
+  
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +11,7 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: LibreFranklin;
     overflow-x: hidden;
 }
 
@@ -23,8 +29,9 @@ main{
     height: 100px;
     position: fixed;
     box-shadow: 0 0 10px rgb(0 0 0 / 20%);
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 100px;
+    padding-left: 100px;
+    z-index: 999;
 }
 
 .navbar-left{
@@ -50,6 +57,16 @@ main{
     text-decoration: none;
     list-style-type: none;
     font-size: 20px;
+    font-weight: bold;
+}
+
+.fa-solid{
+    color:white;
+    font-size: 35px;
+}   
+
+.fa-instagram{
+    margin-top: -5px;
 }
 
 .hero-container{
@@ -73,8 +90,14 @@ main{
 
 .hero-top-container-2{
     background-color: #ed703f;
-    padding: 100px 100px 100px 100px;
+    padding: 75px 75px 75px 75px;
     border-radius: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    box-shadow: 0 0 40px rgb(0 0 0 / 80%);
+
 }
 
 .hero-top-header-container{
@@ -90,17 +113,207 @@ main{
 }
 
 .hero-logo-bg{
-    height: 100px;
+    height: 110px;
     width: 110px;
     background-color: white;
     margin-right: -150px;
 }
 
+
 .hero-name{
     font-size: 50px;
+    font-family: LibreFranklin;
 }
 
 .hero-text{
     font-size: 25px;
     padding-top: 5px;
+    font-family: LibreFranklin;
+    font-weight: 400;
+}
+
+.hero-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 50px;
+        border-radius: 5px;
+        font-size: 25px;
+        font-weight: bold;
+        color: #ed703f;
+        background-color: white;
+        z-index: 5;
+}
+
+.hero-fade{
+    width:100%;
+    height:70px;
+    background: linear-gradient(to top, #ed703f, transparent); 
+    position: absolute;
+    top: 775px;
+}
+
+.carousel-container{
+    background-color: #ed703f;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-container-inner{
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    z-index: 2;
+}
+
+.carousel-container-left{
+    color: white;
+
+}
+
+.carousel-text{
+    width: 600px;
+    font-size: 36px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 60px;
+}
+
+.carousel-image{
+    width: 600px;
+    height: 500px;
+    border-radius: 25px;
+}
+
+.doodle{
+    position: absolute;
+    z-index: 1;
+    opacity: .1;
+    height: 120px;
+    width: 160px;
+}
+
+#coffee{
+    top: 860px;
+    left: 25px;
+    transform: rotate(-20deg);
+}
+
+#eggtoast{
+    top: 1390px;
+    left: 550px;
+    transform: rotate(-20deg);
+}
+
+#teacup{
+    top: 1360px;
+    left: 50px;
+    transform: rotate(10deg);
+}
+
+#croissant{
+    top: 880px;
+    left: 650px;
+    transform: rotate(-20deg);
+}
+
+#cookie{
+    top: 880px;
+    left: 1150px;
+    transform: rotate(-20deg);
+}
+#muffin{
+    top: 1100px;
+    right: 20px;
+    transform: rotate(23deg);
+}
+#crepe{
+    top: 1040px;
+    left: 850px;
+    transform: rotate(-20deg);
+}
+#cereal{
+    top: 830px;
+    left: 350px;
+    transform: rotate(0deg);
+}
+
+.maps-container{
+    background-color: #ed703f;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.maps-inner-container{
+    display: flex;
+    justify-content: space-around;}
+
+.maps-title{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding-bottom: 65px;
+}
+
+.maps-left{
+    margin-left: -100px;
+}
+
+.maps-iframe{
+    border-radius: 25px;
+    box-shadow: 0 0 40px rgb(0 0 0 / 60%);
+}
+
+.address{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.maps-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -600px;
+    margin-top: 20px;
+}
+
+.times-title{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 10px;
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.times-times, .times-days{
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.times-times{
+    font-weight: 500;
+}
+
+.opening-times{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 20px;
 }
