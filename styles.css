@@ -197,7 +197,7 @@ main{
 }
 
 #coffee{
-    top: 860px;
+    top: 900px;
     left: 25px;
     transform: rotate(-20deg);
 }
@@ -231,12 +231,62 @@ main{
     transform: rotate(23deg);
 }
 #crepe{
-    top: 1040px;
-    left: 850px;
+    top: 1090px;
+    left: 840px;
+    transform: rotate(-20deg);
+}
+#crepe2{
+    top: 1430px;
+    left: 1120px;
     transform: rotate(-20deg);
 }
 #cereal{
-    top: 830px;
+    top: 860px;
+    left: 350px;
+    transform: rotate(0deg);
+}
+
+#coffee2{
+    top: 2100px;
+    left: 25px;
+    transform: rotate(-20deg);
+}
+
+#eggtoast2{
+    top: 2100px;
+    left: 950px;
+    transform: rotate(-20deg);
+}
+
+#teacup2{
+    top: 1660px;
+    left: 50px;
+    transform: rotate(10deg);
+}
+
+#croissant2{
+    top: 1480px;
+    left: 650px;
+    transform: rotate(-20deg);
+}
+
+#cookie2{
+    top: 1400px;
+    left: 1150px;
+    transform: rotate(-20deg);
+}
+#muffin2{
+    top: 1700px;
+    right: 20px;
+    transform: rotate(23deg);
+}
+#crepe3{
+    top: 1690px;
+    left: 840px;
+    transform: rotate(-20deg);
+}
+#cereal2{
+    top: 1360px;
     left: 350px;
     transform: rotate(0deg);
 }
